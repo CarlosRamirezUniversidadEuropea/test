@@ -69,12 +69,12 @@ public class Order {
 
     public String returnOrderDetails() {
         double finalAmount = totalAmount - this.discount + this.tax;
-        return "Customer: " + this.customerName + "\n" +
-                " Customer Type: " + this.customerType + "\n" +
-                " Items: " + String.join(", ", this.items) + "\n" +
-                " Total Amount: " + this.totalAmount + "\n" +
-                " Discount: " + this.discount + "\n" +
-                " Tax: " + this.tax + "\n" +
+        return "Customer: " + this.customerName +
+                " Customer Type: " + this.customerType +
+                " Items: " + String.join(", ", this.items) +
+                " Total Amount: " + this.totalAmount +
+                " Discount: " + this.discount +
+                " Tax: " + this.tax +
                 " Final Amount: " + finalAmount;
     }
 }
