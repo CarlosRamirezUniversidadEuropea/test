@@ -77,13 +77,4 @@ public class Order {
         System.out.println("Tax: " + this.tax);
         System.out.println("Final Amount: " + finalAmount);
     }
-
-    public static void main(String[] args) {
-        List<String> items = new ArrayList<>();
-        items.add("Item1");
-        items.add("Item2");
-
-        Order pedido = new Order("Alice","Perez", CustomerType.VIP, items, 1200);
-        pedido.printOrderDetails();
-    }
 }
