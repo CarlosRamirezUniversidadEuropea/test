@@ -1,0 +1,1 @@
+web: java -cp target/insw-1.0-SNAPSHOT.jar org.example.Main
