@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public class Order {
     public String customerName;
     public CustomerType customerType;
-    public String apellido;
     public List<String> items;
     public double totalAmount;
     public double discount;
@@ -22,12 +21,11 @@ public class Order {
      * @param items
      * @param totalAmount
      */
-    public Order(String nombre,String apellido,
+    public Order(String nombre,
                  CustomerType customerType,
                  List<String> items,
                  double totalAmount) {
-        customerName = apellido;
-        this.apellido = nombre;
+        customerName = nombre;
         this.type = customerType;
         this.items = items;
         this.totalAmount = totalAmount;

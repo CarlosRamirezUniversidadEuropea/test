@@ -22,9 +22,9 @@ public class MainApplication {
             List<String> items = new ArrayList<>();
             items.add("Item1");
             items.add("Item2");
-            Order pedido = new Order("Alice","Perez", CustomerType.VIP, items, 1200);
-            pedido.applyDiscount();
-            pedido.calculateTax();
+            Order pedido = new Order("Alice", CustomerType.VIP, items, 1200);
+            //pedido.applyDiscount();
+            //pedido.calculateTax();
             return "Hello, this is a static message from Heroku!. This is the order details: "
                     + pedido.returnOrderDetails();
         }
