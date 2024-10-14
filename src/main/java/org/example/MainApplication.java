@@ -26,7 +26,7 @@ public class MainApplication {
             pedido.applyDiscount();
             pedido.calculateTax();
             return "Hello, this is a static message from Heroku!. This is the order details: "
-                    + pedido.returnOrderDetails();
+                + " \n "  + pedido.returnOrderDetails();
         }
     }
 }
