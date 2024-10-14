@@ -41,7 +41,7 @@ public class Order {
      *      totamAmount mayor a 500, se aplica un 10%
      */
     public void applyDiscount() {
-        if (this.customerType.equals("Regular")) {
+        if (this.customerType.equals(CustomerType.REGULAR)) {
             if (this.totalAmount > 100) {
                 this.discount = this.totalAmount * 0.05;
             }
