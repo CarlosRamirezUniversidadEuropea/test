@@ -23,7 +23,10 @@ public class MainApplication {
             items.add("Item1");
             items.add("Item2");
             Order pedido = new Order("Alice","Perez", CustomerType.VIP, items, 1200);
-            return "Hello, this is a static message from Heroku!. This is the order details:" +
+            pedido.applyDiscount();
+            pedido.calculateTax();
+            return "Hello, this is a static message from Heroku!. This is the order details: "
+                    + "\n" +
                     pedido.returnOrderDetails();
         }
     }
