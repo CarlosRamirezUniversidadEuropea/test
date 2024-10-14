@@ -4,6 +4,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @SpringBootApplication
 public class MainApplication {
 
@@ -16,7 +19,12 @@ public class MainApplication {
 
         @GetMapping("/")
         public String hello() {
-            return "Hello, this is a static message from Heroku!";
+            List<String> items = new ArrayList<>();
+            items.add("Item1");
+            items.add("Item2");
+            Order pedido = new Order("Alice","Perez", CustomerType.VIP, items, 1200);
+            return "Hello, this is a static message from Heroku!. This is the order details:" +
+                    pedido.returnOrderDetails();
         }
     }
 }
