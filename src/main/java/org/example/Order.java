@@ -12,7 +12,6 @@ public class Order {
     public double totalAmount;
     public double discount;
     public double tax;
-    public CustomerType type;
 
     /**
      * Public constructor of Order class
@@ -26,7 +25,7 @@ public class Order {
                  List<String> items,
                  double totalAmount) {
         customerName = nombre;
-        this.type = customerType;
+        this.customerType = customerType;
         this.items = items;
         this.totalAmount = totalAmount;
         this.discount = 0;
