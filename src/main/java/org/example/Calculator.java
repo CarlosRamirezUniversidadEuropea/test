@@ -31,6 +31,11 @@ public class Calculator {
     	}
     }
 
+	/**
+	 *
+	 * @param precios lista de double
+	 * @return el sumatorio de la lista de elementos en precio
+	 */
 	public double calcularSumatorio(List<Double> precios){
 		double total = 0;
 		for(Double numero: precios){
