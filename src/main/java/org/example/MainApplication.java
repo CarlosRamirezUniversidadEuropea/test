@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Author: Carlos Ramírez Lizán
+ */
 @SpringBootApplication
 public class MainApplication {
 
