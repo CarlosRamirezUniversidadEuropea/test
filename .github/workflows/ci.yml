@@ -37,3 +37,10 @@ jobs:
     # Ejecuta los tests (opcional, puedes separar esta tarea si lo prefieres)
     - name: Run tests with Maven
       run: mvn test
+      
+    - name: Deploy to Heroku
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: |
+        git remote add heroku https://git.heroku.com/insw.git
+        git push heroku main
