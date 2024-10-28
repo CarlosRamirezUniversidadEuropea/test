@@ -8,7 +8,7 @@ public class Buscador {
      *
      * @param frase
      * @param lista
-     * @return
+     * @return true or false if sentence is in the list
      */
     public boolean buscarFrase(String frase, List<String> lista) {
         for(String phrase: lista){
