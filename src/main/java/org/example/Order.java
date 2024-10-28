@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 
-// Carlos Ramírez
+// Carlos Ramírez Lizán
 public class Order {
     public String customerName;
     public CustomerType customerType;
