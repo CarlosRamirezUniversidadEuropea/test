@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 // Carlos Ramírez Lizán
 public class Order {
+    
     public String customerName;
     public CustomerType customerType;
     public List<String> items;
