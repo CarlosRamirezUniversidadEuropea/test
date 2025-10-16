@@ -48,4 +48,4 @@ jobs:
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "insw"  # replace with your app name
-          heroku_email: "carlos.ramirez2@universidadeuropea.com"  # replace with your Heroku email
+          heroku_email: "carlos.ramirez.lizan@gmail.com"  # replace with your Heroku email
