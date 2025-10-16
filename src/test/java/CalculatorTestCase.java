@@ -88,8 +88,8 @@ class CalculatorTestCase {
     @Test
     @DisplayName("Simple summatory should work")
     void testSummatory2(){
-        Double uno = new Double(1);
-        Double dos=new Double(2);
+        Double uno = 1.0;
+        Double dos=2.0;
         List<Double> numeros = Arrays.asList(uno,dos);
         double resultado = calculator.calcularSumatorio(numeros);
         assertEquals(3, resultado,"Sumatorio should work");
@@ -99,7 +99,7 @@ class CalculatorTestCase {
     @DisplayName("Simple summatory should work")
     void testSummatory3(){
         Double uno = null;
-        Double dos=new Double(2);
+        Double dos=2.0;
         List<Double> numeros = Arrays.asList(uno,dos);
         double resultado = calculator.calcularSumatorio(numeros);
         assertEquals(2, resultado,"Sumatorio should work");
@@ -109,7 +109,7 @@ class CalculatorTestCase {
     @DisplayName("Simple summatory should work")
     void testSummatory4(){
         Double nan = Double.NaN;
-        Double dos=new Double(2);
+        Double dos= 2.0;
         List<Double> numeros = Arrays.asList(nan,dos);
         double resultado = calculator.calcularSumatorio(numeros);
         assertEquals(2, resultado,"Sumatorio should work");
