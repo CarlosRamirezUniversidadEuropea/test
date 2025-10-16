@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 // Carlos Ramírez Lizán
 public class Order {
-    
+
     public String customerName;
     public CustomerType customerType;
     public List<String> items;
@@ -34,7 +34,7 @@ public class Order {
     }
 
     /**
-     * Si el cliente es regular
+     * If customer is regular
      *      totamAmount mayor a 100, se aplica un 5%
      *      totamAmount mayor a 500, se aplica un 10%
      */
